@@ -1,0 +1,717 @@
+*{
+  margin: 0;
+  padding:0;
+  font-family: Times New Roman;
+}
+
+body{
+  color:white;
+}
+
+h1{
+  margin-bottom: 7%;
+  text-align: center;
+  color: white;
+  border-bottom: 1px white solid;
+  text-decoration: none;
+}
+
+h2{
+  margin-top: 5%;
+  margin-right: 2%;
+  margin-bottom: 4%;
+  margin-left: 2%;
+  text-align: center;
+  border: 1px red solid;
+  color: white;
+}
+
+h3{
+  margin-top: 7%;
+  margin-left: 3%;
+  margin-bottom: 4%;
+  color: white;
+}
+
+h4{
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-bottom: 2%;
+  color: white;
+  font-size: 24px;
+  border: 1px red solid;
+  margin-right: 9%;
+}
+
+h6{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 9%;
+  font-size: 23px;
+}
+
+/*Manu do da página Index*/
+.menu{
+  background: rgba(32, 31, 31, 0.5);
+  height: 80px;
+  width: 100%;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.menu .menuLateral{
+  float: right;
+  margin-right: 20px;
+}
+
+.menu .menuLateral li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+.menu .menuLateral li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a.active, a:hover{
+  background: rgba(149, 12, 12, 0.705)
+}
+
+.menu-btnI{
+  width: 40px;
+  height: 40px;
+ 
+}
+
+.check-btn{ 
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+  label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+  }
+
+  .media .menuLateral li a{
+      font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .check-btn {
+    display: block;
+  }
+  .menuLateral{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+
+@media only screen and (max-width: 400px){
+    label.logo{
+        text-align: 20px;
+        color: white;
+        padding: 0;
+        margin: 0;
+        padding-left: 2%;
+    }
+}
+
+.menu .menuLateral li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+.menu .menuLateral li a{
+    font-size: 20px;
+}
+
+.menu .menuLateral li a:hover{
+    background: none;
+    color:red;
+    border: 2px rgb(255, 0, 0) solid;
+}
+
+#check:checked ~ .menuLateral{
+    left: 0;
+}
+}
+
+@media only screen and (max-width: 900px){
+  .check-btn {
+      display: block;
+  }
+  .menuLateral{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+
+  @media only screen and (max-width: 400px){
+      label.logo{
+          font-size: 10px;
+          color: white;
+          padding: 0;
+          margin: 0;
+          padding-left: 2%;
+      }
+
+
+      .muralA{
+        padding: 0;
+        margin: 0;
+        margin: 39%;
+        padding-top: 30%;
+      }
+
+      
+
+      .logo a button{
+        margin-top: 20%;
+      }
+
+      .tituA-Mural{
+        margin-top: 30%;
+      }
+
+  }    
+
+  @media only screen and (max-width: 507px){
+    label.logo{
+      font-size: 20px;
+    }
+  } 
+
+  .menu .menuLateral li{
+      display: block;
+      margin: 50px 0;
+      line-height: 34px;
+  }
+
+  .menu .menuLateral li a{
+      font-size: 20px;
+  }
+
+  .menu .menuLateral li a:hover{
+      background: none;
+      color:red;
+  }
+
+  #check:checked ~ .menuLateral{
+      left: 0;
+  }
+}
+
+/*Links dos Direcionamentos da Páginas */
+
+.alterLink{
+  margin-right: 2%;
+  margin-left: 1%;
+  padding-bottom: 1%;
+  border-bottom: 1px red solid;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+}
+
+.linkAnime{
+  margin-top: 4%;
+  margin-left: 7%;
+  color: white;
+}
+
+.linkEp{
+  margin-top: 3%;
+  margin-left: 7%;
+  color: white;
+}
+
+.linkEp-Ooka{
+  margin-top: 21%;
+  margin-left: 7%;
+  color: white;
+  font-size: 17px;
+}
+  
+.foto{
+  background-color: rgb(34, 31, 31);
+  background-image: url("https://www.10wallpaper.com/wallpaper/2560x1600/1308/simple_gray-design_HD_wallpaper_2560x1600.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Atualizações de Envios */
+.mural{
+  color: white;
+  margin-left: 6%;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 17px;
+}
+
+.muralA{
+  padding-bottom: 11%;
+  border-top: 1px rgb(14, 12, 12) solid;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 1%;
+}
+
+.animesMural{
+  width: 130px;
+  height: 100%;
+  float: left;
+  font-size: 50px;
+}
+
+.linkMural{
+  cursor:pointer;
+  background-color: none;
+  display: block;
+}
+
+/* Logo da Lista de Animes */
+
+.logo{
+  margin-left: 2%;
+  border-top: 2px red solid;
+  border-bottom: 2px red solid;
+  margin-right: 2%;
+}
+
+.logo .btn-list{
+  margin-top: 18%;
+}
+
+.logo .btn-filme{
+  margin-top: 17%;
+}
+
+.logo-Anime{
+  width: 150px;
+  height: 100%;
+  float: left;
+  margin-top: 3px;
+  font-size: 50px;
+}
+
+
+.logo a button{
+  display: block;
+  padding-top: 0.5%;
+  font-size: 17px;
+  background-color: rgb(124, 32, 32);
+  color: white;
+  border-radius: 6px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding: 1%;
+  transition: .5s;
+  margin-bottom: 1%;
+  border: 1px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo a{
+  font-size: 40px;
+}
+
+.logo a:hover button{
+  background-color: red;
+  border-color: black;
+}
+
+.logo-description{
+  color: white;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* Botão de Voltar e Proxima */
+
+.btn-VP{
+  margin-top: 5%;
+  margin-left: 7%;
+}
+
+.btn-VP .proximo{
+  margin-left: 70%;
+  border: 1px red solid;
+  padding: 0 3% 0 3%;
+  text-align: center;
+  font-size: 17px;
+}  
+
+.btn-VP .voltar{
+  margin-left: 70%;
+  border: 1px red solid;
+  padding: 0 3% 0 4%;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* Cadastro de Contas */
+.criarC{
+  background-image: url("https://www.10wallpaper.com/wallpaper/2560x1600/1308/simple_gray-design_HD_wallpaper_2560x1600.jpg");
+  color: white;
+  font-weight: 500;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+main{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h1{
+  border-bottom: 1px white solid;
+  text-align: center;
+}
+
+main h2{
+  color: rgb(149, 25, 25);
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  border: 1px transparent 
+}
+
+main .social-media{
+  display: flex;
+  align-content: center;
+}
+
+main .social-media a{
+  text-decoration: none;
+}
+
+main .social-media img{
+  width: 36px;
+  margin-left: 3rem;
+}
+
+main .social-media a:first-child img{ /* O a:first-child é para pegar a primeira imagem e modificar só ela */
+  margin-left: 0;
+}
+
+main form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main form label{
+  display: flex;
+  flex-direction: column;
+}
+
+main form label span{
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+main form input{
+  background-color: rgb(136, 133, 133);
+  width: 300px;
+  height: 50px;
+  padding-left: 1%;
+  margin-top: 1rem;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid rgb(124, 32, 32);
+  border-radius: 8px;
+}
+
+main form input[type="submit"]{
+  cursor: pointer;
+  width: 50%;
+  margin-top: 4rem;
+  border: none;
+  border-radius: 32px;
+  background: rgb(124, 32, 32);
+  color: white;
+  font-size: 1.1rem;
+  transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover{
+  background: red;
+}  
+
+section.images{
+  display: flex;
+  padding: 4rem;
+  align-items: flex-end;
+  width: 50vw;
+  justify-content: flex-end;
+}
+
+section .images img{
+  width: 100%;
+}
+
+section.images .circle{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgb(124,32,32), grey);
+  clip-path: circle(50% at right 80%);
+  z-index: -1;
+}
+
+/* O @media only screen and é o comando para verificar o tamanho de tela 
+  O (min-width: 900px) and (max-width: 1200px) é como se eu estivesse falando:
+  Se você passar da largura 900 e 1200 quero que você altera tal coisa.
+*/
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  section.images img{
+    width: 110%;
+  }
+  section.images .circle{
+    clip-path: circle(35% at right 80%);
+  }
+
+  iframe{
+    width: 600px;
+    height: 400px;
+  }
+  
+}
+
+
+@media only screen and (max-width: 900px) {
+  section.images{
+    display: none;
+    visibility: hidden;
+  }
+
+  main{
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main h1{
+    font-size: 2rem;
+  }
+
+  main .alternative span{
+    font-size: 0.8rem;
+  }
+
+  main form label span, main form input[type="submit"] {
+    font-size: 1rem;
+  }
+
+  main form label input{
+    width: 250px;
+    height: 40px;
+  }
+
+  .btn-VP{
+    padding:0;
+    margin: 0;
+    margin-top: 2%;
+    margin-right: 2%;
+
+  }
+
+  .logo .logo-description{
+    margin-top: 2%;
+    text-align: left;
+  }
+
+  .logo .btn-list{
+    margin-top: 55%;
+    font-size: 20px;
+  }
+
+  .logo .btn-filme{
+    margin-top: 43%;
+    font-size: 20px;
+  }
+
+  iframe{
+    width: 300px;
+    height: 300px;
+  }
+
+  .descricao{
+    float: center;
+  }
+
+  .descricao .descricao-Ani{
+    padding-right: 10%;
+  }
+
+  .descricao .logo-img{
+    margin-left: 12%;
+    margin-bottom: 4%;
+  }
+
+  .chat{
+    margin-left: 0%;
+    padding: 0;
+  }
+
+  .chat iframe{
+    margin: 0;
+    padding: 0;
+    width: 98%;
+  }
+
+  .capitulos .cap{
+    margin-left: 20%;
+    height: 100%;
+    width: 80%;
+  }
+
+}
+
+main .alternative{
+  margin-top: 1rem;
+}
+
+main .alternative span{
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
+  position: relative;
+}
+
+main .alternative span::before, main .alternative span::after{
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100px;
+  bottom: 50%;
+  right: 50px;
+  background:rgb(124, 32, 32);
+}
+
+main .alternative span::after{
+  left: 50px;
+}
+
+.home{
+  font-size: 20px;
+  color: white;
+  text-align: bold;
+  border-bottom: 1px rgb(124, 32, 32) solid;
+}
+
+/* Titulo do anime */
+.tituAni{
+  color: white;
+  border: 1px transparent;
+  text-align: left;
+  margin-bottom: 1%;
+}
+
+.logo-img{
+  width: 240px;
+  height: 100%;
+  float:left;
+  margin-top: 3px;
+  margin-left: 2%;
+  font-size: 50px;
+  margin-right: 1%;
+}
+
+.descricao-Ani{
+  margin-left: 2%;
+  text-align: left;
+  font-size: 17px;
+}
+
+.titu-Ep{
+  border: 1px transparent;
+  text-align: center;
+  margin-top: 5%;
+  border-top: 1px red solid;
+  margin-right: 10%;
+  padding-top: 1%;
+}
+.epAnime{
+  text-align: center;
+  font-size: 17px;
+}
+
+/* chat */
+.chat{
+  text-align: center;
+}
+
+/* Comentario */
+.comentario{
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.com{
+  border: 1px transparent;
+  border: 1px red solid;
+  padding-bottom: 1%;
+}
+
+.capitulos{
+  padding-bottom: 2%;
+}
+
+.capitulos .cap{
+  margin-left: 20%;
+  height: 100%;
+  width: 60%;
+}
